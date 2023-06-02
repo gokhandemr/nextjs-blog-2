@@ -5,16 +5,20 @@ import { FaSearch } from 'react-icons/fa';
 import { searchPost } from '@/services/Fetch';
 import Link from 'next/link';
 
-
-
 export default function SearchBar() {
     let [post, setPost] = useState()
+
     async function searchFunc(event) {
         event.preventDefault()
         document.querySelector('#searchList').style.display = 'block'
-        let key = document.querySelector('#InputValue').value
-        let { posts } = await searchPost(key)
-        setPost(posts)
+        const regex = /[</>\\*'!$€£@½%{&}=|."`~¨´\-;\[\]\(\)_:^#+/?,é]/g
+        let key = document.querySelector('#InputValue').value.trim().replaceAll(regex, '')
+        if (key !== '') {
+            let { posts } = await searchPost(key)
+            setPost(posts)
+        } else {
+            alert('error')
+        }
     }
 
     return (

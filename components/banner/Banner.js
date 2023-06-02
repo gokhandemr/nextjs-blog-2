@@ -1,10 +1,7 @@
 import Link from 'next/link';
 import styles from './styles.module.css'
-import {
-    AiOutlineInstagram, AiFillFacebook, AiFillLinkedin, AiFillGithub, AiFillTwitterSquare,
-} from "react-icons/Ai";
+import { AiOutlineInstagram, AiFillFacebook, AiFillLinkedin, AiFillGithub, AiFillTwitterSquare } from "react-icons/ai";
 
-import { IoMdHand } from "react-icons/Io";
 export default async function Banner() {
     return (
         <section className={styles.banner}>

@@ -1,0 +1,22 @@
+.text {
+    text-align: justify;
+    line-height: 27px;
+}
+
+.title {
+    margin-bottom: 20px;
+    text-align: left;
+    line-height: 30px;
+}
+
+.main {
+    padding: 30px;
+    background-color: #1b1b1c;
+    border-radius: 10px;
+}
+
+
+.about {
+    float: right;
+    width: 60%;
+}

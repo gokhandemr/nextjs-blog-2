@@ -1,0 +1,23 @@
+.main {
+    padding: 30px;
+    background-color: #1b1b1c;
+    border-radius: 10px;
+}
+
+.postTitle {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #444;
+}
+
+.imageConteiner {
+    margin: 0 auto 20px;
+    text-align: center;
+}
+
+.tags,
+.tagsSpan {
+    margin: 0 5px;
+    font-size: 15px;
+    color: #777;
+}

@@ -1,0 +1,30 @@
+.categoryList {
+    display: inline-flex;
+}
+
+.categoryList a {
+    margin: 0 10px;
+    color: #999;
+    display: inline-flex;
+}
+
+.categoryList a::before {
+    content: '#'
+}
+
+.categoryList a:hover {
+    color: #fff;
+    transition: all .3s;
+}
+
+.categoryList li:first-child a {
+    color: #fff;
+}
+
+.categoryList li:first-child a span {
+    display: block;
+}
+
+.categoryList li span {
+    display: none;
+}
